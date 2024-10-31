@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+      "ext-json": "*",
+        "freelancehunt/php-credit-card-validator": "^3.2"
+    }
+}

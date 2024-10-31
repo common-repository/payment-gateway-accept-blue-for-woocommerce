@@ -1,0 +1,418 @@
+/* Card styles start */
+label[for='payment_method_acceptblue-cc'], label[for="radio-control-wc-payment-method-options-acceptblue-cc"] {
+  background-image: url("../../images/cards.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  background-size: 254px;
+  display: block;
+}
+
+@media (min-width: 1092px) and (max-width: 1199px) {
+  label[for='payment_method_acceptblue-cc'], label[for="radio-control-wc-payment-method-options-acceptblue-cc"] {
+    background-size: 190px;
+  }
+  label[for="radio-control-wc-payment-method-options-acceptblue-cc"]{
+    background-position: 55px calc(100% - 16px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1091px) {
+  label[for='payment_method_acceptblue-cc'], label[for="radio-control-wc-payment-method-options-acceptblue-cc"] {
+    padding-bottom: 40px !important;
+    background-position: 28px calc(100% - 16px);
+    background-size: 190px;
+  }
+  label[for="radio-control-wc-payment-method-options-acceptblue-cc"]{
+    background-position: 55px calc(100% - 16px);
+  }
+}
+
+@media (max-width: 524px) {
+  label[for='payment_method_acceptblue-cc'], label[for="radio-control-wc-payment-method-options-acceptblue-cc"] {
+    padding-bottom: 40px !important;
+    background-position: 28px calc(100% - 16px);
+    background-size: 190px;
+  }
+  label[for="radio-control-wc-payment-method-options-acceptblue-cc"]{
+    background-position: 55px calc(100% - 16px);
+  }
+}
+
+
+.acceptblue-card-wrap{
+    padding: 20px 5px;
+    border-radius: 20px;
+}
+
+.acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+.acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+.acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"]
+{
+    height: 44.5px;
+    background: #fff;
+    border: 1px solid #636778;
+    border-radius: .5rem;
+    font-size: 26px
+}
+
+
+.acceptblue-card-wrap label[for="ab-card"],
+.acceptblue-card-wrap label[for="ab-expire"],
+.acceptblue-card-wrap label[for="ab-cvv"],
+.acceptblue-ach-wrap label[for="ab-routing-num"],
+.acceptblue-ach-wrap label[for="ab-account-num"]
+{
+    font-size: 16px;
+}
+
+.acceptblue-card-wrap input.invalid{
+    box-shadow: 0 0 1px 1px red;
+}
+
+.acceptblue-card-wrap > div {
+    position: relative;
+}
+
+/*.ab-expire-cvv-wrap > div:nth-child(1) .ab-error-message{*/
+/*    left: 15px;*/
+/*}*/
+
+.acceptblue-card-wrap .ab-error-message{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+    color: red;
+    font-size: 12px;
+}
+
+.acceptblue-card-wrap.saved-metod #ab-card, .acceptblue-card-wrap.saved-metod #ab-cvv, .acceptblue-card-wrap.saved-metod #ab-expire {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 900px){
+    .acceptblue-card-wrap{
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 845px){
+    .acceptblue-card-wrap{
+        padding: 15px 0;
+        max-width: 320px;
+    }
+}
+
+.acceptblue-card-wrap .ab-expire-cvv-wrap{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.acceptblue-card-wrap input[type="text"],
+.acceptblue-card-wrap input[type="text"]:focus{
+    max-width: unset;
+    min-width: unset;
+    font-size: 26px;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.acceptblue-card-wrap input[type="text"]::placeholder{
+    color: #ccc;
+    font-size: 26px;
+}
+
+.acceptblue-card-wrap .ab-expire-cvv-wrap > div{
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.acceptblue-card-wrap .ab-card-wrap{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.acceptblue-card-wrap .ab-card-wrap input[type="text"]{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.acceptblue-card-wrap .ab-thumb-place {
+  display: inline-block;
+  width: 48px;
+  height: 32px;
+  background: rgba(255, 255, 255, .2);
+  border: 1px dashed #D7D7D7;
+  border-radius: 2px;
+  align-self: center;
+  margin-right: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.acceptblue-card-wrap .ab-thumb-place img {
+  float: none !important;
+}
+
+@media (max-width: 1199px) {
+  .acceptblue-card-wrap .ab-thumb-place {
+    width: 32px;
+    height: 22px;
+  }  
+}
+
+
+#ab-card {
+  flex-basis: calc(100% - 63px);
+  max-width: calc(100% - 63px);
+  border-radius: .5rem 0 0 .5rem !important;
+}
+
+#ab-card, #ab-card:focus {
+  border: none;
+  outline: none;
+}
+
+.acceptblue-card-wrap .ab-card-wrap input[type="text"],
+.acceptblue-card-wrap .ab-card-wrap input[type="text"]::placeholder{
+    font-size: 26px;
+    letter-spacing: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin:0 5px 0 0;
+    background: #fff;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .acceptblue-card-wrap input[type="text"],
+    .acceptblue-card-wrap input[type="text"]::placeholder,
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"],
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"]::placeholder {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+    .acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"]{
+        font-size: 22px;
+        height: auto;
+    }
+  
+  #ab-card {
+    flex-basis: calc(100% - 38px);
+    max-width: calc(100% - 38px);
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .acceptblue-card-wrap input[type="text"],
+    .acceptblue-card-wrap input[type="text"]::placeholder,
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"],
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"]::placeholder,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"] {
+      font-size: 18px;
+      letter-spacing: 0;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    .acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+    .acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"]{
+        font-size: 18px;
+        height: auto !important;
+    }
+
+    .acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+    .acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"] {
+        height: 32px;
+    }
+  
+  #ab-card {
+    flex-basis: calc(100% - 38px);
+    max-width: calc(100% - 38px);
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 767px) {
+    .acceptblue-card-wrap input[type="text"],
+    .acceptblue-card-wrap input[type="text"]::placeholder,
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"],
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"]::placeholder {
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    .acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+    .acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"]{
+        font-size: 22px;
+        height: auto !important;
+    }
+  
+  #ab-card {
+    flex-basis: calc(100% - 38px);
+    max-width: calc(100% - 38px);
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 474px) {
+    .acceptblue-card-wrap input[type="text"],
+    .acceptblue-card-wrap input[type="text"]::placeholder,
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"],
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"]::placeholder {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    .acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+    .acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"]{
+        font-size: 20px;
+        height: auto !important;
+    }
+  
+  #ab-card {
+    flex-basis: calc(100% - 38px);
+    max-width: calc(100% - 38px);
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 374px) {
+    .acceptblue-card-wrap input[type="text"],
+    .acceptblue-card-wrap input[type="text"]::placeholder,
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"],
+    .acceptblue-card-wrap .ab-card-wrap input[type="text"]::placeholder {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+    .acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"]{
+        font-size: 18px;
+        height: auto !important;
+    }
+
+  #ab-card {
+    flex-basis: calc(100% - 38px);
+    max-width: calc(100% - 38px);
+    padding-right: 0;
+  }
+}
+
+.acceptblue-card-wrap .ab-save-payment-wrap{
+    display: none;
+    padding-top: 40px;
+}
+
+.acceptblue-card-wrap .ab-save-payment-wrap input{
+    display: inline-block;
+}
+
+.acceptblue-card-wrap .ab-save-payment-wrap label{
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+@media screen and (max-width: 840px){
+    .acceptblue-card-wrap .ab-save-payment-wrap{
+        display: flex !important;
+    }
+    .acceptblue-card-wrap .ab-save-payment-wrap label{
+        font-size: 14px;
+        /*padding: 0 0 0 18px;*/
+        padding: 0 0 0 0;
+    }
+
+    .acceptblue-card-wrap #ab-expire, .acceptblue-card-wrap #ab-cvv,
+    .acceptblue-ach-wrap #ab-routing-num, .acceptblue-ach-wrap #ab-account-num,
+    .acceptblue-card-wrap .ab-expire-cvv-wrap input[type="text"] {
+        height: 37.59px;
+    }
+}
+
+.ab-card-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #636778;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+
+/* ACH styles start */
+
+.acceptblue-ach-wrap{
+    padding: 20px 20px;
+    position: relative;
+}
+
+@media screen and (max-width: 855px){
+    .acceptblue-ach-wrap{
+        padding: 15px 25px;
+    }
+}
+
+.acceptblue-ach-wrap label{
+    font-size: 16px;
+}
+
+.acceptblue-ach-wrap input[type="text"],
+.acceptblue-ach-wrap input[type="text"]:focus{
+    min-width: unset;
+    max-width: 100%;
+    outline: none !important;
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    width: 100%;
+}
+
+.acceptblue-ach-wrap input[type="text"]::placeholder{
+    /*color: #fff;*/
+    font-size: 20px;
+}
+
+.acceptblue-ach-wrap .ab-routing-number-wrap,
+.acceptblue-ach-wrap .ab-account-number-wrap{
+    padding-bottom: 15px;
+}
+
+.acceptblue-ach-wrap label{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 855px){
+    .acceptblue-ach-wrap label{
+        font-size: 14px;
+    }
+}
+
+.acceptblue-card-wrap .ab-expire-cvv-wrap > div > input{
+    width: 100%;
+}
+
+.wc-block-checkout .ab-card-block input[type="text"]{
+    border: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
